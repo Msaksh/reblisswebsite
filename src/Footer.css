@@ -1,0 +1,139 @@
+.footer {
+    /* margin-top: 100px; */
+    background:#ecfff1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: rgb(0, 85, 0);
+    border-top: 1px solid rgb(0, 85, 0);
+}
+
+.footerTop {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.footerBottom {
+ text-align: center;
+ border-top: 1px solid white;
+ padding-top: 20px;
+ margin-top: 40px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.footerBottom > div {
+    padding-left: 20px;
+    padding-right: 20px;
+    border-left: 1px solid white;
+}
+
+.footer__form { 
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 10px;
+}
+
+.footer__formOptions {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    font-size: large;
+}
+
+.footer__form > button{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(0, 58, 0) ;
+    border: none;
+    color: #ecfff1;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+.footer__contactUs {
+    color: white;
+    padding: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+.footer__contactUsTop {
+    border-bottom: 2px solid rgb(0, 85, 0);
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+}
+
+.footer__contactUsBottom>h1 {
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.footer__contactUsBottom {
+    /* border: 1px solid white; */
+    border-radius: 5px;
+}
+    
+
+.footer__icons {
+    /* color : red; */
+    /* background-color: black; */
+    border-radius: 50%;
+    padding: 5px;
+    margin: 4px;
+}
+.footer__icons:hover {
+    transform: scale(1.3);
+}
+
+.footer__addressBox {
+    display: flex;
+    align-items: center;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between ;
+}
+
+.top_options {
+    /* border: 1px solid white; */
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.top1 > img {
+    width: 200px;
+    margin-bottom: 80px;
+}
+.top1>button {
+    padding: 10px 40px 15px 40px;
+    font-size: 1.7rem;
+    border-radius: 30px;
+    background-color: rgb(0, 58, 0);
+    border: none;
+    color: #ecfff1;
+    cursor: pointer;
+
+}
+
+.top3 {
+    width: 30%;
+    text-align: center;
+    padding: 20px;
+}

@@ -1,0 +1,9 @@
+.homebody {
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border-top-right-radius: 250px;
+    border-bottom-left-radius: 250px;
+    background-color: whitesmoke;
+    box-shadow: 0px 0px 20px grey;
+}

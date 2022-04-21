@@ -1,0 +1,25 @@
+.benefits {
+    /* border: 2px solid yellow; */
+    color: rgb(16, 76, 16);
+    padding-bottom: 100px;
+}
+
+.benefits > h1 {
+    font-size: 4rem;
+    padding-top: 10px;
+    text-align: center;
+    /* border: 1px solid yellow; */
+}
+
+.benefits_points {
+    padding-top: 50px;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.benefits_points>img {
+    
+    width: 700px;
+}
