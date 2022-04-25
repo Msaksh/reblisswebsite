@@ -54,6 +54,7 @@ function AboutUs() {
                     <img
                         className="aboutUs__containerimage2"
                         src="https://www.rebliss.in/webpic/vision.jpg"
+                        alt=""
                     />
                 </div>
             </div>
@@ -63,7 +64,7 @@ function AboutUs() {
                     <img
                         className="aboutUs__containerimage3"
                         src="https://www.rebliss.in/webpic/team.png"
-                        alt="3r image"
+                        alt="3r"
                     />
 
                     <span>

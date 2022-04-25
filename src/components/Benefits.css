@@ -2,13 +2,18 @@
     /* border: 2px solid yellow; */
     color: rgb(16, 76, 16);
     padding-bottom: 100px;
+    font-family: 'Inter', sans-serif;
+    box-shadow: 0px -10px 10px rgb(225, 225, 225);
+    
 }
 
 .benefits > h1 {
     font-size: 4rem;
-    padding-top: 10px;
     text-align: center;
     /* border: 1px solid yellow; */
+    background:linear-gradient(to right, rgb(224, 255, 224), white);
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .benefits_points {
@@ -19,7 +24,52 @@
     justify-content: center;
 }
 
-.benefits_points>img {
-    
-    width: 700px;
+.benefits_points {
+    height: 100%;
+    width: 100%;
+    /* border: 2px solid blue; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+
+}
+
+.benefitsImg {
+    min-width: 250px;
+    max-width: 300px;
+    /* border: 2px solid red; */
+}
+
+.benefits_pointsSection{
+    /* border: 1px solid black; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.benefits_Info {
+    border: 2px solid green;
+}
+
+.benefits_Info>h1 {
+    font-size: 2rem;
+}
+
+.benefits_Saathi {
+    display: flex;
+    background: linear-gradient(to right, rgb(224, 255, 224), white);
+}
+
+@media (max-width: 480px) {
+    .benefits_pointsSection{
+        flex-direction: column;
+    }
+    .benefits > h1{
+        font-size: 2rem;
+    }
+    .benefits_Info > h1 {
+        font-size: 1.2rem;
+    }
 }

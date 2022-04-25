@@ -12,42 +12,12 @@ function Footer() {
     let year = date.getFullYear();
     console.log(year);
 
-    function handleClick() {
-        alert("Thankyou for writing to us...");
-    }
-
     return (
         <div className="footer" id="footer">
             <div className="top">
                 <div className="top1 top_options">
-                    <img src={logo} alt="" />
+                    <img src={logo} alt="reBLISS Icon" />
                     <button>Employee Login</button>
-                </div>
-                <div className="top2 top_options">
-                    <div className="footer__form">
-                        <input
-                            className="footer__formOptions"
-                            type="text"
-                            placeholder="Enter Full Name"
-                        />
-                        <input
-                            className="footer__formOptions"
-                            type="text"
-                            placeholder="Enter Mobile Number"
-                        />
-                        <input
-                            className="footer__formOptions"
-                            type="text"
-                            placeholder="Enter Email Id"
-                        />
-                        <textarea
-                            className="footer__formOptions"
-                            placeholder="Message"
-                            rows={3}
-                        />
-
-                        <button onClick={handleClick}>Submit</button>
-                    </div>
                 </div>
                 <div className="top3">
                     <div className="footer__contactUsTop">
@@ -76,9 +46,7 @@ function Footer() {
                                 className="footer__icons"
                             />
                             <p>
-                                Kutumbh Care Distribution Network Pvt Ltd, B
-                                154,B Block Sector 63, Noida, Uttar Pradesh
-                                201301
+                                i-Thum Tower, A-108, Noida, Uttar Pradesh 201301
                             </p>
                         </div>
                     </div>
