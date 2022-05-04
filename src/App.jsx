@@ -7,6 +7,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Blog from "./components/Blog";
 import ContactUs from "./components/ContactUs";
 import Getapp from "./components/Getapp";
+import TC from "./components/TC";
+import Privacypolicy from "./components/Privacypolicy";
 
 function App() {
     return (
@@ -37,6 +39,16 @@ function App() {
                     <Route
                         path="/"
                         element={[<Header />, <Home />, <Footer />]}
+                    />
+                </Routes>
+                <Routes>
+                    <Route
+                        path="/terms&conditions"
+                        element={[<Header />, <TC />, <Footer />]}
+                    />
+                    <Route
+                        path="/privacypolicy"
+                        element={[<Header />, <Privacypolicy />, <Footer />]}
                     />
                 </Routes>
             </div>

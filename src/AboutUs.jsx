@@ -1,77 +1,33 @@
 import React from "react";
 import "./AboutUs.css";
+import Ourteam from "./components/Ourteam";
 
 function AboutUs() {
     return (
-        <div className="aboutUs">
-            <div className="aboutUs__info">
-                <div className="aboutUs__container1">
-                    <img
-                        className="aboutUs__containerimage1"
-                        src="https://www.rebliss.in/webpic/officevibe3.png"
-                        alt="image1"
-                    />
-                    <span className="aboutUs__containerPara">
-                        <p>
-                            reBLISS is an initiative of Kutumbh Care Group,
-                            aimed at giving wings to the social economic
-                            environment of the country. reBLISS is the brand
-                            name of the company Kutumbh Care Distribution
-                            Network Pvt. Ltd. which was established in the year
-                            2016 registered under Ministry of Corporate Affairs,
-                            Companies Act 2013.
-                        </p>
-                        <p>
-                            The brand reBLISS is a combination of two words -
-                            reliable and BLISSful. reBLISS brings "Perfect
-                            Happiness and Delight (BLISS)" by being "Dependable
-                            and Trusted by Consistently delivering Good Quality
-                            and Performance (reliable).
-                        </p>
-                        <p>
-                            reBLISS is an organization which is providing
-                            opportunities to work & earn anytime anywhere. 1000s
-                            of people are working with reBLISS and earning as
-                            per their requirement, skill and effort.
-                        </p>
-                        <p>
-                            reBLISS is a Human Network of reBLISS Sathis leading
-                            to a Commercial and Social Revolution by creating
-                            financial Independence.
-                        </p>
-                    </span>
-                </div>
-
-                <div className="aboutUs__container2">
-                    <span className="aboutUs__containerPara">
-                        <h1>Our Vision</h1>
-                        <p className="aboutUs__containersPara2">
-                            Enabling People With Choices Of Work & Place To Earn
-                            As Per Their Convenience.
-                        </p>
-                    </span>
-
-                    <img
-                        className="aboutUs__containerimage2"
-                        src="https://www.rebliss.in/webpic/vision.jpg"
-                        alt=""
-                    />
-                </div>
+        <div className="aboutus">
+            <div className="aboutus_para">
+                <h1>About Us</h1>
+                <p>
+                    reBLISS is your one-stop destination for freelancing. We
+                    understand that seeking jobs door to door is exhausting and
+                    hectic. Hence, we here at Rebliss, a B2B company provide you
+                    freelancing opportunities at the comfort of your home.
+                </p>
+                <p>
+                    reBLISS is the platform mediating between the In-demand
+                    partners looking for gig workforce and full-timers/
+                    part-timers / freelancers looking for jobs based on their
+                    skillset. <br />
+                    We essentially manage workforce in a way that aims to help
+                    job providers fulfill their workforce requirements
+                    effectively and efficiently.{" "}
+                </p>
+                <h2>
+                    So Get Set Go…Work Anytime, Anywhere and get Limitless
+                    Earning opportunities .
+                </h2>
             </div>
-
-            <div className="aboutUs__ourTeam">
-                <div className="aboutUs__ourTeamBox1">
-                    <img
-                        className="aboutUs__containerimage3"
-                        src="https://www.rebliss.in/webpic/team.png"
-                        alt="3r"
-                    />
-
-                    <span>
-                        <p>OUR TEAM</p>
-                    </span>
-                </div>
-            </div>
+            <Ourteam />
         </div>
     );
 }

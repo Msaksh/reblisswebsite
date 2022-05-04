@@ -1,8 +1,10 @@
 .getApp {
     background-color: rgb(27, 73, 27);
     border-radius: 30px;
-    padding: 5px;
-    padding-bottom:   10px;
+    /* padding: 5px; */
+    justify-content: center;
+    display: flex;
+    align-items: center;
   }
 
   .getApp:hover {
@@ -10,7 +12,16 @@
   }
   .getApp > span{
     color: white;
-    
+    /* border: 1px solid red; */
+}
+
+.getApp > img {
+  width: 30px;
+  margin-left: -10px;
+  height: 30px;
+  /* border: 1px solid  yellow; */
+  padding: 3px;
+  margin-right: 3px;
 }
 
 .header {
@@ -22,10 +33,10 @@
     align-items: center;
     z-index: 10;
     /* border-bottom: 1px solid black;   */
-
-    background:linear-gradient(to right
-    , rgb(224, 255, 224), white);
-    /* border: 1px solid blue; */
+    font-family: 'Inter', sans-serif;
+    /* background:linear-gradient(to right
+    , rgb(224, 255, 224), white); */
+    /* border: 2px solid blue; */
  }
 
 .header__logo {
@@ -81,9 +92,10 @@
   @media (max-width: 480px){
     .header{
       height: 100%;
-      border: 1px solid blue;
+      /* border: 1px solid blue; */
       width: 100%;
       flex-direction: column;
+      margin-bottom: 10px;
     }
 
     .header__logo {
@@ -95,11 +107,32 @@
 
     .header__nav{
       /* flex-direction: column */
-      padding-top: 10px;
+      padding-top: 8px;
       padding-bottom: 10px;
+      /* border: 2px solid red; */
+      width: 100%;
     }
     .header__optionName {
-      font-size: 0.8rem;
+      font-size: 0.5rem;
       padding: 0;
+      text-align: center;
     }
+    .getApp {
+      /* border: 2px solid red; */
+      width: 100%;
+    }
+    .getApp > img {
+      width: 20px;
+      height: 20px;
+    }
+
   }
+/* 
+  .navbar {
+    background: linear-gradient(to right, rgb(224, 255, 224), white);
+    border: 2px solid red;
+  }
+
+  .containerr {
+    border: 2px solid purple;
+  }   */

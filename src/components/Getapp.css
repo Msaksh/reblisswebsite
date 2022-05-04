@@ -44,3 +44,10 @@
 .getapp_container > a:hover {
     background-color: green;
 }
+
+@media (max-width: 480px) {
+    .getapp {
+        /* border: 2px solid red; */
+        height: 100%;
+    }
+}

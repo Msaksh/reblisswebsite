@@ -1,5 +1,4 @@
 import React from "react";
-// import "./Home.css";
 import HomeCarousel from "./HomeCarousel";
 import Homebody from "./components/Homebody";
 

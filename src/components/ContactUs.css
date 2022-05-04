@@ -1,20 +1,88 @@
-/*@import url(//fonts.googleapis.com/css?family=Montserrat:300,400,500);*/
-.contact3 {
-    font-family: "Montserrat", sans-serif;
-    color: #8d97ad;
-    font-weight: 300;
+.contact_formHeading {
+  background-color: rgb(249, 249, 249);
+
+}
+
+.contact_formHeading > h1 {
+  padding-top: 20px;
+  font-size: 3rem;
+  color: rgb(1, 89, 1);
+  text-align: center;
+}
+
+.contact_form {
+  /* border: 2px solid red; */
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-evenly;  
+  padding-top: 60px;
+  padding-bottom: 60px;
+  color: green;
+  align-items: center;
+}
+.contact_form > img {
+  width: 500px;
+  border-radius: 10px;
+}
+
+.contact_form > form {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  /* align-items: center; */
+  justify-content: space-evenly;
+  /* border: 2px solid yellow; */
+  height: 100%  ;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px grey;
+  padding: 30px;
+
+}
+
+.contact_form > form > textarea {
+  border: 1px solid grey;
+  border-radius:5px;
+  padding: 10PX;
+}
+
+.contact_form > form > input {
+  border: 1px solid grey;
+  padding: 10px;
+  border-radius: 5px;
+}
+.contact_form > form > button {
+  background-color: green;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+}
+.contact_form > form > button:hover {
+  background-color: rgb(13, 177, 13);
+}
+
+.contact_form > form > label {
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+}
+
+@media (max-width: 600px) {
+  .contact_form{
+    flex-direction: column;
+    height: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
-  
-  .contact3 h1,
-  .contact3 h2,
-  .contact3 h3,
-  .contact3 h4,
-  .contact3 h5,
-  .contact3 h6 {
-    color: #3e4555;
+
+  .contact_form > form {
+    width: 80%;
+    margin: auto;
+    height: 60vh;
   }
-  
-  .contact3 .font-weight-medium {
-    font-weight: 500;
+  .contact_form > img {
+    display: none;
   }
-  
+}

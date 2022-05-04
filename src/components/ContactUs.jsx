@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./ContactUs.css";
+import ContactUsImg from "../images/contactUsImage.jpg";
 
 function ContactUs() {
     const [name, setName] = useState("");
@@ -18,6 +19,7 @@ function ContactUs() {
             regData
         );
         if (res.status === 200) {
+            alert("submitted successfully!");
             setName("");
 
             setEmail("");
@@ -28,189 +30,63 @@ function ContactUs() {
     };
 
     return (
-        <div>
-            <div className="bg-white text-black">
-                <div className="contact3 py-5">
-                    <div class="container"></div>
-                    <div className="row no-gutters">
-                        <div className="container">
-                            <div className="row">
-                                <div className="col">
-                                    <img
-                                        src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/contact/2.jpg"
-                                        className="img-fluid p-3"
-                                        alt="contact us"
-                                    />
-                                </div>
-                                <div className="col">
-                                    <h2 className="h1-responsive font-weight-bold text-center ">
-                                        Contact us
-                                    </h2>
-                                    {/*Section description*/}
-                                    <p className="text-center w-responsive mx-auto mb-5">
-                                        Do you have any questions? Please do not
-                                        hesitate to contact us directly.
-                                        <br /> Our team will come back to you
-                                        within a matter of hours to help you.
-                                    </p>
-                                    <div className="row">
-                                        {/*Grid column*/}
-                                        <div className="col-md-9 mb-md-0 mb-5">
-                                            <form
-                                                id="contact-form"
-                                                name="contact-form"
-                                                method="POST"
-                                            >
-                                                {/*Grid row*/}
-                                                <div className="row">
-                                                    {/*Grid column*/}
-                                                    <div className="col-md-12">
-                                                        <div className="md-form mb-0 ">
-                                                            <label
-                                                                htmlFor="name"
-                                                                className
-                                                            >
-                                                                Your Name
-                                                            </label>
-                                                            <input
-                                                                type="text"
-                                                                id="name"
-                                                                name="name"
-                                                                className="form-control"
-                                                                value={name}
-                                                                onChange={(e) =>
-                                                                    setName(
-                                                                        e.target
-                                                                            .value
-                                                                    )
-                                                                }
-                                                            />
-                                                        </div>
-                                                    </div>
-                                                    {/*Grid column*/}
-                                                    {/*Grid column*/}
-                                                    <div className="col-md-12">
-                                                        <div className="md-form mb-0">
-                                                            <label
-                                                                htmlFor="email"
-                                                                className
-                                                            >
-                                                                Your Email
-                                                            </label>
-                                                            <input
-                                                                type="text"
-                                                                placeholder="www.abc@gmail.com"
-                                                                id="email"
-                                                                name="email"
-                                                                className="form-control"
-                                                                value={email}
-                                                                onChange={(e) =>
-                                                                    setEmail(
-                                                                        e.target
-                                                                            .value
-                                                                    )
-                                                                }
-                                                            />
-                                                        </div>
-                                                    </div>
+        <div className="contact_formHeading">
+            <h1>Enquiry Form</h1>
+            <div className="contact_form">
+                <img src={ContactUsImg} alt="contactUSImage" />
+                <form action="#">
+                    <label>Full Name</label>
+                    <input
+                        type="text"
+                        placeholder="Enter your name *"
+                        required
+                        value={name}
+                        onChange={(e) => setName(e.target.value)}
+                    />
+                    <label>Mobile no.</label>
 
-                                                    <div className="col-md-12">
-                                                        <div className="md-form mb-0">
-                                                            <label
-                                                                htmlFor="Number"
-                                                                className
-                                                            >
-                                                                Mobile No
-                                                            </label>
-                                                            <input
-                                                                type="text"
-                                                                id="mobile"
-                                                                name="mobile"
-                                                                className="form-control"
-                                                                value={mobile}
-                                                                onChange={(e) =>
-                                                                    setMobile(
-                                                                        e.target
-                                                                            .value
-                                                                    )
-                                                                }
-                                                            />
-                                                        </div>
-                                                    </div>
-                                                    {/*Grid column*/}
-                                                </div>
-                                                {/*Grid row*/}
-                                                {/*Grid row*/}
-                                                <div className="row">
-                                                    <div className="col-md-12">
-                                                        <div className="md-form mb-0">
-                                                            <label
-                                                                htmlFor="subject"
-                                                                className
-                                                            >
-                                                                Subject
-                                                            </label>
-                                                            <input
-                                                                type="text"
-                                                                id="subject"
-                                                                name="subject"
-                                                                className="form-control"
-                                                                value={subject}
-                                                                onChange={(e) =>
-                                                                    setSubject(
-                                                                        e.target
-                                                                            .value
-                                                                    )
-                                                                }
-                                                            />
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                {/*Grid row*/}
-                                                {/*Grid row*/}
-                                                <div className="row">
-                                                    {/*Grid column*/}
-                                                    <div className="col-md-12">
-                                                        <div className="md-form">
-                                                            <label htmlFor="message">
-                                                                Your message
-                                                            </label>
-                                                            <textarea
-                                                                type="text"
-                                                                id="message"
-                                                                name="message"
-                                                                rows={4}
-                                                                className="form-control md-textarea"
-                                                                defaultValue={
-                                                                    ""
-                                                                }
-                                                                value={message}
-                                                                onChange={(e) =>
-                                                                    setMessage(
-                                                                        e.target
-                                                                            .value
-                                                                    )
-                                                                }
-                                                            />
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                {/*Grid row*/}
-                                                <button
-                                                    type="button"
-                                                    className="btn btn-primary mt-4 w-100"
-                                                    onclick={(e) => lgnbtn()}
-                                                >
-                                                    Send
-                                                </button>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                    <input
+                        type="text"
+                        placeholder="Enter mobile number *"
+                        required
+                        value={mobile}
+                        onChange={(e) => setMobile(e.target.value)}
+                    />
+                    <label>Email</label>
+
+                    <input
+                        type="text"
+                        placeholder="Enter email id *"
+                        required
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                    />
+                    <label>Subject</label>
+
+                    <input
+                        type="text"
+                        placeholder="Enter Subject"
+                        value={subject}
+                        onChange={(e) => setSubject(e.target.value)}
+                    />
+                    <label>Message</label>
+
+                    <textarea
+                        rows="4"
+                        cols="50"
+                        name="comment"
+                        form="usrform"
+                        placeholder="Message"
+                        value={message}
+                        onChange={(e) => setMessage(e.target.value)}
+                    >
+                        Enter text here...
+                    </textarea>
+
+                    <button type="button" onClick={(e) => lgnbtn()}>
+                        Submit
+                    </button>
+                </form>
             </div>
         </div>
     );

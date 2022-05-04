@@ -6,8 +6,8 @@ import jiomart from "../images/jiomart.png";
 function Dp() {
     return (
         <div className="dp">
-            <h1>Demand Partners</h1>
-            <div className="dp_logos">
+            <h1 data-aos="fade-down">Demand Partners</h1>
+            <div className="dp_logos" data-aos="fade-left">
                 <img
                     className="dp_logoSize dp_airtel"
                     src={airtel}
@@ -31,11 +31,6 @@ function Dp() {
                 <img
                     className="dp_logoSize dp_airtel"
                     src={airtel}
-                    alt="airtel Logo"
-                />
-                <img
-                    className="dp_logoSize dp_jiomart"
-                    src={jiomart}
                     alt="airtel Logo"
                 />
             </div>

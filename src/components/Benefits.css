@@ -3,21 +3,19 @@
     color: rgb(16, 76, 16);
     padding-bottom: 100px;
     font-family: 'Inter', sans-serif;
-    box-shadow: 0px -10px 10px rgb(225, 225, 225);
-    
 }
 
 .benefits > h1 {
-    font-size: 4rem;
+    font-size: 3rem;
     text-align: center;
     /* border: 1px solid yellow; */
-    background:linear-gradient(to right, rgb(224, 255, 224), white);
+    background:linear-gradient(to right, rgb(239, 239, 239), white);
     padding-top: 30px;
     padding-bottom: 30px;
 }
 
 .benefits_points {
-    padding-top: 50px;
+    /* padding-top: 20px; */
     /* border: 1px solid red; */
     display: flex;
     align-items: center;
@@ -45,31 +43,67 @@
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 50px;
+    justify-content: space-evenly;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .benefits_Info {
-    border: 2px solid green;
-}
-
-.benefits_Info>h1 {
-    font-size: 2rem;
-}
-
-.benefits_Saathi {
+    /* border: 2px solid red; */
+    width: 350px;
+    /* height: 300px; */
     display: flex;
-    background: linear-gradient(to right, rgb(224, 255, 224), white);
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+
 }
+
+.benefits_Underline {
+    border-bottom: 3px solid rgb(16, 76, 16);
+    margin: 20px;
+}
+.benefits_Info>h1 {
+    font-size:1.5rem;
+    font-weight: 300;
+    font-style: italic;
+    margin-bottom: 10px;
+    /* border: 2px solid red; */
+    word-wrap: break-word;
+}
+
+.benefits_Info > span {
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.benefits_Sathi {
+    display: flex;
+    background: linear-gradient(to right, rgb(239, 239, 239), white);
+}
+
 
 @media (max-width: 480px) {
+    .benefits {
+        margin-top: -70px;
+    }
     .benefits_pointsSection{
         flex-direction: column;
     }
     .benefits > h1{
-        font-size: 2rem;
+        font-size: 1.5rem;
+    }
+
+    .benefits_Info {
+        justify-content: space-around;
+        /* border: 1px solid red; */
+        height: 100%;
     }
     .benefits_Info > h1 {
         font-size: 1.2rem;
+    }
+
+    .benefits_Info > span {
+        font-size: 1.3rem;
     }
 }

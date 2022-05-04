@@ -1,14 +1,13 @@
 import React from "react";
 import "./Meet.css";
+import Carousel from "react-bootstrap/Carousel";
 
 function Meet() {
     return (
         <div className="meet">
-            <h1>Meet our reBLISSIANS</h1>
-            <div className="meet_video">
+            <h1 data-aos="fade-down">Meet our reBLISSians</h1>
+            <div className="meet_video" data-aos="zoom-in">
                 <iframe
-                    // width="270"
-                    // height="150"
                     src="https://www.youtube.com/embed/lDSo2-L_q70"
                     title="YouTube video player"
                     frameBorder="0"
@@ -17,8 +16,6 @@ function Meet() {
                 ></iframe>
 
                 <iframe
-                    // width="325"
-                    // height="150"
                     src="https://www.youtube.com/embed/dNOVdoCXx0w"
                     title="YouTube video player"
                     frameBorder="0"
@@ -27,8 +24,6 @@ function Meet() {
                 ></iframe>
 
                 <iframe
-                    // width="325"
-                    // height="150"
                     src="https://www.youtube.com/embed/iJ8v3ul438A"
                     title="YouTube video player"
                     frameBorder="0"

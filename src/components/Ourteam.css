@@ -1,0 +1,7 @@
+.ourteamColor {
+    color: rgb(16,  76 , 16);
+}
+
+.ourteam_imgDiv > img:hover {
+    box-shadow: 0px 0px 10px rgb(168, 168, 168);
+}
